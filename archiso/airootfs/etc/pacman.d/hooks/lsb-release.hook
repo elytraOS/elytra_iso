@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = lsb-release
+
+[Action]
+Description = Copy /etc/elytra-release to /etc/lsb-release
+When = PostTransaction
+Exec = /bin/sh -c "cp /etc/elytra-release /etc/lsb-release"
