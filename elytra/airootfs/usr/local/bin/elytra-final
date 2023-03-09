@@ -35,7 +35,8 @@ rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -f /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm -f /etc/xdg/autostart/welcome.desktop
 rm /root/{.automated_script.sh,.zlogin}
-mv /etc/xerolinux-release /etc/lsb-release
+mv /etc/elytra-release /etc/lsb-release
+for i in `ls /home/`; do rm -rf /home/$i/*/calamares.desktop || exit 0; done
 rm -rf /home/liveuser/
 
 echo "Permission of root"
@@ -50,7 +51,7 @@ sed -i "s/#DefaultTimeoutStartSec=90s/DefaultTimeoutStartSec=10s/g" /etc/systemd
 
 echo "Remove no longer needed packages"
 echo "#################################"
-sudo pacman -Rdd --noconfirm elytra-calamares calamares-config ckbcomp kpmcore mkinitcpio-archiso
+sudo pacman -Rdd --noconfirm calamares-app calamares-cfg ckbcomp kpmcore mkinitcpio-archiso
 
 echo "#################################"
 echo "End elytra-final"

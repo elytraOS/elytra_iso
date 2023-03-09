@@ -1,355 +1,291 @@
-archiso
-alsa-utils
-amd-ucode
-arch-install-scripts
-archinstall
-b43-fwcutter
+## Base system
+archlinux-keyring
 base
 base-devel
-bind
-brltty
-btrfs-progs
-clonezilla
-cloud-init
-crda
-darkhttpd
-ddrescue
-dhclient
-dhcpcd
+cryptsetup
+device-mapper
 diffutils
-dmidecode
-dmraid
-dnsmasq
-dosfstools
-e2fsprogs
+dracut
 edk2-shell
-efibootmgr
-ethtool
-exfatprogs
-f2fs-tools
-fatresize
-fd
-fsarchiver
-gnu-netcat
-gpart
-gpm
-gptfdisk
-hdparm
-hyperv
-intel-ucode
-irssi
-iw
-iwd
-jfsutils
-kinit
-kitty-terminfo
+inetutils
+iptables-nft
 less
-libfido2
-libusb-compat
 linux
-linux-headers
-linux-atm
 linux-firmware
-linux-firmware-marvell
-lsscsi
-lvm2
-lynx
+linux-headers
+logrotate
+lsb-release
 man-db
 man-pages
-mc
 mdadm
-memtest86+
-memtest86+-efi
-mkinitcpio
-mkinitcpio-archiso
-mkinitcpio-nfs-utils
-modemmanager
-mtools
 nano
-nbd
-ndisc6
-nfs-utils
-nilfs-utils
-nmap
-ntfs-3g
-nvme-cli
-openconnect
-open-iscsi
-openssh
-openvpn
-partclone
-parted
-partimage
-pcsclite
-ppp
-pptpclient
-pv
-reflector
-rp-pppoe
-rsync
-screen
-sdparm
-sg3_utils
-smartmontools
-sof-firmware
-squashfs-tools
+nano-syntax-highlighting
+perl
+s-nail
 sudo
-syslinux
-systemd-resolvconf
-tcpdump
-terminus-font
-testdisk
-tldr
-tmux
-tpm2-tss
-udftools
-usb_modeswitch
-usbmuxd
-usbutils
-vpnc
-wireguard-tools
-wireless-regdb
-wireless_tools
-wpa_supplicant
-wvdial
-xdotool
-xfsprogs
-xl2tpd
-
-### Grub Stuff
-
-grub
-os-prober
-
-### archiso-extra
-
-exa
-ntp
-most
-wget
-dialog
-haveged
-dnsutils
-logrotate
-
-#########################################################################
-#                  SOFTWARE FROM ARCH LINUX REPOSITORIES
-#########################################################################
-
-### Applications
-
-jq
-gmrun
-figlet
-ostree
-okular
-numlockx
-lm_sensors
-appstream-glib
-
-### Bat to replace cat
-
-bat
-bat-extras
-
-### Fonts
-
-ttf-fira-code
-otf-libertinus
-tex-gyre-fonts
-ttf-hack-nerd
-awesome-terminal-fonts
-adobe-source-sans-pro-fonts
-
-### Theme Tools
-
-lolcat
-neofetch
-
-### System Utilities
-
+sysfsutils
+systemd-sysvcompat
+texinfo
 vi
-duf
-gcc
-git
-gts
-npm
-w3m
-yad
-zip
-xdo
-inxi
-meld
-wget
-lzop
-nmon
-tree
-vala
-htop
-lshw
-cmake
-boost
-cblas
-expac
-fuse2
-fuse3
-gtest
-lhasa
-meson
-ninja
-unace
-unrar
-unzip
-p7zip
-rhash
-sshfs
-vnstat
-nodejs
-cronie
-hwinfo
-arandr
-assimp
-netpbm
-wmctrl
-grsync
-libmtp
-polkit
-sysprof
-semver
-zenity
-dnsmasq
-hddtemp
-mlocate
-gtk-doc
-jsoncpp
-archey3
-fuseiso
-gettext
-gparted
-node-gyp
-intltool
-graphviz
-pkgstats
-inetutils
-s3fs-fuse
-playerctl
-dmidecode
-asciinema
-oniguruma
-appstream
-cifs-utils
-file-roller
-lsb-release
-dbus-python
-dconf-editor
-laptop-detect
-perl-xml-parser
-gnome-disk-utility
-appmenu-gtk-module
-extra-cmake-modules
+which
 
-### elytra
-sddm
-bash-completion
-cinnamon
-nemo-fileroller
-gnome-terminal
-elytra-neofetch
-elytra-calamares
-elytra-calamares-config
-
-### G-Streamer
-
-gstreamer
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-ugly
-
-## Pipewire Audio
-
-wireplumber
-pipewire-jack
-lib32-pipewire-jack
-
-### Bluetooth
-
-bluez
-blueberry
-bluez-libs
-bluez-utils
-bluez-plugins
-bluez-hid2hci
-
-### Network
-
-avahi
-openldap
-nss-mdns
-smbclient
-net-tools
-openresolv
-traceroute
-modemmanager
-networkmanager
-nm-cloud-setup
-networkmanager-vpnc
-networkmanager-pptp
-networkmanager-l2tp
-network-manager-sstp
-network-manager-applet
-networkmanager-openvpn
-networkmanager-strongswan
-networkmanager-fortisslvpn
-networkmanager-openconnect
-mobile-broadband-provider-info
-
-### File management
-
+## Filesystem
+btrfs-progs
+dosfstools
+e2fsprogs
+exfatprogs
+f2fs-tools
 gvfs
-mtpfs
-udiskie
-udisks2
-ldmtool
 gvfs-afc
+gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
-gvfs-gphoto2
+jfsutils
+lvm2
+mtools
+nfs-utils
+nilfs-utils
+ntfs-3g
+reiserfsprogs
+xfsprogs
 
-### Tumbler
+## Boot
+efibootmgr
+efitools
+grub
+grub-tools
+mkinitcpio-firmware
+os-prober
+update-grub
 
-libgsf
-tumbler
+## CPU
+amd-ucode
+intel-ucode
+
+### Video
+mesa
+mesa-utils
+xorg-server
+xorg-xdpyinfo
+xorg-xinit
+xorg-xinput
+xorg-xkill
+xorg-xrandr
+
+### Input
+fingerprint-gui
+fprintd
+game-devices-udev
+gestures
+iio-sensor-proxy
+imwheel
+libinput
+libinput-gestures
+libinput_gestures_qt
+piper
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+xf86-input-synaptics
+xf86-input-void
+xf86-input-wacom
+
+### Printers & Scanner support
+print-manager
+printer-support
+scanner-support
+
+## Network hardware
+b43-fwcutter
+broadcom-wl-dkms
+
+## General hardware
+lsscsi
+sg3_utils
+smartmontools
+usbutils
+
+## Audio hardware
+alsa-firmware
+alsa-plugins
+alsa-utils
+gst-libav
+gst-plugin-pipewire
+gst-plugins-bad
+gst-plugins-ugly
+libdvdcss
+pavucontrol
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+rtkit
+sof-firmware
+wireplumber
+
+### System Utilities
+bash-completion
+dialog
+dmidecode
+dmraid
+downgrade
+duf
+fakeroot
 freetype2
+git
+glances
+gpm
+gptfdisk
+haveged
+hwdetect
+hwinfo
+inxi
+libgsf
 libopenraw
-poppler-qt5
+mlocate
+ntp
+pacman-contrib
+pkgfile
 poppler-glib
+power-profiles-daemon
+python-packaging
+rebuild-detector
+reflector
+rsync
+tldr
+unrar
+unzip
+wget
+xdg-user-dirs-gtk
+xdg-utils
+xz
+
+## Network
+bind
+dhclient
+dnsmasq
+ethtool
+iwd
+modemmanager
+nbd
+ndisc6
+net-tools
+netctl
+networkmanager
+networkmanager-openconnect
+networkmanager-openvpn
+nss-mdns
+openconnect
+openvpn
+ppp
+pptpclient
+rp-pppoe
+usb_modeswitch
+vpnc
+whois
+wireless-regdb
+wpa_supplicant
+xl2tpd
+
+## Bluetooth
+blueman
+bluez
+bluez-utils
+
+## Firewall
+firewalld
+python-pyqt5
+python-capng
+
+## Live iso specific
+archiso
+archinstall
+arch-install-scripts
+memtest86+
+mkinitcpio-archiso
+pv
+syslinux
+
+## Live iso tools
+clonezilla
+gpart
+gparted
+grsync
+hdparm
+
+## Editor
+gedit
+
+## Archive
+file-roller
+
+### Multimedia
+ffmpeg
+ffmpegthumbs
 ffmpegthumbnailer
 
-### Python & Libs
+## Image viewer
+eog
 
-python-cffi
-python-numpy
-python-docopt
-python-pyaudio
-python-anytree
-python-pygments
-python-websockets
+## Video player
+mpv
 
-#######################################################
-###                    EXTRAS                       ###
-#######################################################
+### PKG Management
+yay
 
-### Xorg Applications
+## Browser
+firefox
+firefox-ublock-origin
 
-xorg-apps
-xorg-xinit
-xorg-server
+## System
+galculator
+libreoffice-fresh
 
-### Virtual Machine
+## Fonts
+adobe-source-han-sans-cn-fonts
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-kr-fonts
+cantarell-fonts
+noto-fonts
+ttf-bitstream-vera
+ttf-dejavu
+ttf-liberation
+ttf-opensans
 
-spice-vdagent
-open-vm-tools
+## MATE Stuff
+arc-gtk-theme
+capitaine-cursors
+cinnamon
+elytra-cinnamon-config
+elytra-grub-poly-dark
+elytra-neofetch
+elytra-qogir-icons
+gnome-system-monitor
+gnome-terminal
+nemo-compare
+nemo-fileroller
+network-manager-applet
+sddm
+xdg-user-dirs-gtk
+
+## Calamares
+calamares-app
+calamares-cfg
+ckbcomp
+kvantum
+qt5ct
+
+# VM SUPPORT
+## Qemu
 qemu-guest-agent
+
+## Spice
+spice-vdagent
+
+## Virtual-box
 virtualbox-guest-utils
+
+## VMware
+open-vm-tools
+xf86-input-vmmouse
+xf86-video-vmware
